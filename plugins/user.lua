@@ -59,4 +59,10 @@ return {
       -- refer to the configuration section below
     },
   },
+  {
+    "ccaglak/larago.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
 }

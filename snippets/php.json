@@ -1,0 +1,64 @@
+{
+	"Make PHP public method": {
+		"prefix": "pubf",
+		"body": [
+			"public function ${1}(${2})",
+			"{",
+			"  ${3}",
+			"}${0}"
+		],
+		"description": "Make PHP public method"
+	},
+	"Make PHP construct": {
+		"prefix": "_c",
+		"body": [
+			"public function __construct(${1})",
+			"{",
+			"  ${2}",
+			"}${0}"
+		],
+		"description": "Make PHP construct"
+	},
+	"Make Laravel Route Get": {
+		"prefix": "lrg",
+		"body": [
+			"Route::get('${1}', [${2},\"${3}\"])->name('${4}');${0}"
+		],
+		"description": "Make Laravel Route Get"
+	},
+	"Make Laravel Route Post": {
+		"prefix": "lrp",
+		"body": [
+			"Route::post('${1}', [${2},\"${3}\"])->name('${4}');${0}"
+		],
+		"description": "Make Laravel Route Post"
+	},
+	"Make Laravel Route Put": {
+		"prefix": "lru",
+		"body": [
+			"Route::put('${1}', [${2},\"${3}\"])->name('${4}');${0}"
+		],
+		"description": "Make Laravel Route Put"
+	},
+	"Make Laravel Route Delete": {
+		"prefix": "lrd",
+		"body": [
+			"Route::delete('${1}', [${2},\"${3}\"])->name('${4}');${0}"
+		],
+		"description": "Make Laravel Route Delete"
+	},
+	"Make Laravel Route Resource": {
+		"prefix": "lrr",
+		"body": [
+			"Route::resource('${1}', ${2})${3};${0}"
+		],
+		"description": "Make Laravel Route Resource"
+	},
+	"Make Inteface Function": {
+		"prefix": "pubi",
+		"body": [
+			"public function ${1}(${2})${0};"
+		],
+		"description": "Make Inteface Function"
+	}
+}
